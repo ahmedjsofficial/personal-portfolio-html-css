@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio | Home</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+</head>
+<body>
+
+	<main>
+		<nav>
+			<a href="#" class="logo"><i class="fab fa-js-square"></i></a>
+			<ul>
+				<li><a href="#" class="active">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Servies</a></li>
+				<li><a href="#">Portfolio</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+			<form class="search__form">
+				<input type="search" name="search" class="form-control" placeholder="search" autocomplete="off" />
+				<a href="#" class="btn-search"><i class="fa fa-search"></i></a>
+			</form>
+		</nav>
+		<div class="main-container">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="swiper-slide-content">
+							<div class="swiper-slide-text animate__animated animate__bounceInDown">
+								<h1 class="Oswald"><span class="theme-color">Imagination</span> is more</h1>
+								<h1 class="Oswald">Important Than</h1>
+								<h1 class="Oswald">Knowledge</h1>
+								<p>
+									<span>Togather we the people achieve more than any single person could ever do alone.</span>
+								</p>
+								<a href="#" class="btn-theme">Get Started <i class="fas fa-sign-in-alt"></i></a>
+							</div>
+							<div class="swiper-slide-img">
+								<img src="./author2.png" alt="author2/img" />
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="swiper-slide-content">
+							<div class="swiper-slide-text">
+								<h1 class="Oswald"><span class="theme-color">Imagination</span> is more</h1>
+								<h1 class="Oswald">Important Than</h1>
+								<h1 class="Oswald">Knowledge</h1>
+								<p>
+									<span>Togather we the people achieve more than any single person could ever do alone.</span>
+								</p>
+								<a href="#" class="btn-theme">Get Started <i class="fas fa-sign-in-alt"></i></a>
+							</div>
+							<div class="swiper-slide-img">
+								<img src="./author1.png" alt="author2/img" />
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="swiper-slide-content">
+							<div class="swiper-slide-text">
+								<h1 class="Oswald"><span class="theme-color">Imagination</span> is more</h1>
+								<h1 class="Oswald">Important Than</h1>
+								<h1 class="Oswald">Knowledge</h1>
+								<p>
+									<span>Togather we the people achieve more than any single person could ever do alone.</span>
+								</p>
+								<a href="#" class="btn-theme">Get Started <i class="fas fa-sign-in-alt"></i></a>
+							</div>
+							<div class="swiper-slide-img">
+								<img src="./author3.png" alt="author2/img" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Add Pagination -->
+    			<div class="swiper-pagination"></div>
+			</div>
+		</div>
+	</main>
+
+
+	<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			loop: true,
+			autoplay: {
+		        delay: 2500,
+		        disableOnInteraction: false,
+		    },
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+				renderBullet: function (index, className) {
+					return '<span class="' + className + '">' + (index + 1) + '</span>';
+				},
+			},
+		});
+	</script>
+</body>
+</html>
